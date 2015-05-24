@@ -34,12 +34,6 @@
     </vcs-settings>
     <requirements />
     <build-triggers>
-      <build-trigger id="retryBuildTrigger" type="retryBuildTrigger">
-        <parameters>
-          <param name="enqueueTimeout" value="1" />
-          <param name="retryAttempts" value="4" />
-        </parameters>
-      </build-trigger>
       <build-trigger id="vcsTrigger" type="vcsTrigger">
         <parameters>
           <param name="groupCheckinsByCommitter" value="true" />
