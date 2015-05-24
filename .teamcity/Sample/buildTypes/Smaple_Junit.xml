@@ -47,6 +47,11 @@
           <param name="quietPeriodMode" value="DO_NOT_USE" />
         </parameters>
       </build-trigger>
+      <build-trigger id="TRIGGER_1" type="buildDependencyTrigger">
+        <parameters>
+          <param name="dependsOn" value="Smaple_Junit" />
+        </parameters>
+      </build-trigger>
     </build-triggers>
     <build-extensions>
       <extension id="BUILD_EXT_1" type="xml-report-plugin">
