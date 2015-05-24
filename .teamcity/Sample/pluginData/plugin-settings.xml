@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+  <issueTrackers>
+    <trackerConnection key="youtrack1" type="youtrack">
+      <param name="secure:password" value="zxxc69ce80d715e6c75" />
+      <param name="username" value="root" />
+      <param name="host" value="https://jbshk.myjetbrains.com/youtrack/editProject/12" />
+      <param name="idPrefix" value="cadc079b-7ab1-480e-bbab-85238031b099" />
+      <param name="name" value="jbshk" />
+      <param name="autoSync" value="true" />
+    </trackerConnection>
+  </issueTrackers>
+  <versionedSettings rootId="Sample_HttpsGithubComJilanbshk" enabled="true" showChanges="true" />
+</settings>
+
