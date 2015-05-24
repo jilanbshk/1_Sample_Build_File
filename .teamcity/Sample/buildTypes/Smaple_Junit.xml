@@ -33,7 +33,14 @@
       <vcs-entry-ref root-id="Sample_HttpsGithubComJilanbshk" />
     </vcs-settings>
     <requirements />
-    <build-triggers />
+    <build-triggers>
+      <build-trigger id="retryBuildTrigger" type="retryBuildTrigger">
+        <parameters>
+          <param name="enqueueTimeout" value="1" />
+          <param name="retryAttempts" value="4" />
+        </parameters>
+      </build-trigger>
+    </build-triggers>
     <build-extensions>
       <extension id="BUILD_EXT_1" type="xml-report-plugin">
         <parameters>
