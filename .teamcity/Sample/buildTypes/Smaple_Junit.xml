@@ -4,7 +4,31 @@
   <description />
   <settings>
     <parameters />
-    <build-runners />
+    <build-runners>
+      <runner id="RUNNER_1" name="" type="Ant">
+        <parameters>
+          <param name="build-file"><![CDATA[<project name="vldmedea" default="copyfiles">
+
+    <target name="copyfiles">
+        <copy todir="D:\Material">
+            <fileset dir="D:\Material\builds">
+                <include name="*.xml"/>
+            </fileset>
+        </copy>
+    </target>
+        
+</project>]]></param>
+          <param name="build-file-path" value="build.xml" />
+          <param name="target" value="copyfiles" />
+          <param name="teamcity.coverage.emma.include.source" value="true" />
+          <param name="teamcity.coverage.emma.instr.parameters" value="-ix -*Test*" />
+          <param name="teamcity.coverage.idea.includePatterns" value="*" />
+          <param name="teamcity.coverage.jacoco.patterns" value="+:*" />
+          <param name="teamcity.step.mode" value="execute_if_failed" />
+          <param name="use-custom-build-file" value="true" />
+        </parameters>
+      </runner>
+    </build-runners>
     <vcs-settings>
       <vcs-entry-ref root-id="Sample_HttpsGithubComJilanbshk" />
     </vcs-settings>
