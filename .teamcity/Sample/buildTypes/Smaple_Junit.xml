@@ -52,6 +52,12 @@
           <param name="dependsOn" value="Smaple_Junit" />
         </parameters>
       </build-trigger>
+      <build-trigger id="remoteRunOnBranch" type="remoteRunOnBranch">
+        <parameters>
+          <param name="branchy:jetbrains.git" value="pattern:jetbrains.git" />
+          <param name="pattern:jetbrains.git" value="refs/heads/remote-run/*" />
+        </parameters>
+      </build-trigger>
     </build-triggers>
     <build-extensions>
       <extension id="BUILD_EXT_1" type="xml-report-plugin">
