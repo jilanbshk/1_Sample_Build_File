@@ -2,8 +2,8 @@
 <project name="vldmedea" default="copyfiles">
 
     <target name="copyfiles">
-        <copy todir="dest">
-            <fileset dir="source">
+        <copy todir="D:\Material">
+            <fileset dir="D:\Material\builds">
                 <include name="*.xml"/>
             </fileset>
         </copy>
