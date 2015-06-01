@@ -1,6 +1,5 @@
 //
 <project name="vldmedea" default="copyfiles">
-
     <target name="copyfiles">
         <copy todir="D:\Material">
             <fileset dir="D:\Material\builds">
