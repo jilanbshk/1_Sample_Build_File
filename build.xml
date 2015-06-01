@@ -4,7 +4,7 @@
     <target name="copyfiles">
         <copy todir="D:\Material">
             <fileset dir="D:\Material\builds">
-                <include name="*.xml"/>
+            <include name="*.xml"/>
             </fileset>
         </copy>
     </target>
