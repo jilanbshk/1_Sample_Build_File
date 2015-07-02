@@ -11,5 +11,12 @@
     </trackerConnection>
   </issueTrackers>
   <versionedSettings rootId="Sample_HttpsGithubComJilanbshk" enabled="true" showChanges="true" />
+  <project-graphs>
+    <graph title="New chart title" defaultFilters="" hideFilters="" seriesTitle="Serie" format="percent">
+      <valueType key="ArtifactsResolvingTime" title="Artifact Dependencies Resolving Time" sourceBuildTypeId="Smaple_Junit" />
+      <valueType key="BuildArtifactsPublishingTime" title="Build Artifacts Publishing Time" sourceBuildTypeId="Smaple_Junit" />
+      <valueType key="BuildDuration" title="Build Duration (all stages)" sourceBuildTypeId="Smaple_Junit" />
+    </graph>
+  </project-graphs>
 </settings>
 
